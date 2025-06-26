@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>Personal Interest</title>
+<link rel="stylesheet" href="footer.css">
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #FDF6F0;
+      color: #333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: #B4E197;
+      padding: 50px 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #3F3F3F;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #FFB6B9;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .main {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      background-color: #FFB6B9;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-family: 'Elephant';
+      font-size: 40px;
+      text-shadow: 1px 1px #e290a2;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background-color: #FFF0F3;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #FF6F91;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #4B2E2E;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #8B7E66;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5C4033;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin: 30px 0 60px;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #B4E197;
+      color: #4B3832;
+      padding: 12px 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #FFB6B9;
+      color: white;
+    }
+
+    footer {
+      background-color: #FFB6B9;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: auto;
+    }
+
+    footer span {
+      font-weight: bold;
+      color: #4B3832;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        text-align: center;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <a href="index.html" target="_blank">HOME</a>
+    <a href="aboutme.html" target="_blank">ABOUT ME</a>
+    <a href="edu.html" target="_blank">EDUCATION</a>
+    <a href="gallery.html" target="_blank">GALLERY</a>
+    <a href="melaka.html" target="_blank">HOMETOWN</a>
+    <a href="contact.html" target="_blank">CONTACT</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>PERSONAL INTEREST</h1>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-icon">📖</div>
+        <h2>Journaling</h2>
+        <p>I find comfort in journaling — a private space where I can express feelings, reflect on growth, and preserve little moments. Writing helps me manage emotions and appreciate everyday life.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">☕</div>
+        <h2>Cafe Hunting</h2>
+        <p>Cafe trips with close friends are my happy rituals. From strawberry matcha to cozy spaces, each outing creates memories beyond coffee — it’s about reconnecting and cherishing small adventures.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌇</div>
+        <h2>Capturing Sunset</h2>
+        <p>Sunsets remind me to slow down. Each capture is a peaceful reminder of change and beauty. My sunset photos are moments of stillness and gratitude.</p>
+        <a href="gallery.html" target="_blank" class="btn">See Captures</a>
+      </div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="edu.html" target="_blank">⟵ Previous</a>
+      <a href="gallery.html" target="_blank">Next ⟶</a>
+    </div>
+
+ <footer class="footer">
+    <footer>&copy; 2025 Syahirah's Personal Website |</footer>
+
+  </div>
+</body>
+</html>

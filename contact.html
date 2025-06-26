@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<link rel="stylesheet" href="footer.css">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      color: #4B3832;
+      position: relative;
+      z-index: 1;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    .header {
+      background-color: #F4C2C2cc; /* semi-transparent */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: 'Elephant', serif;
+      font-size: 40px;
+      color: #5C4033;
+    }
+
+    .topnav {
+      background-color: #B4E197cc; 
+      overflow: hidden;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .topnav a {
+      display: inline-block;
+      color: #3F3F3F;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #FFB6B9;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background-color: #FFF0F3dd; /* semi-transparent */
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border: 2px solid #F4C2C2;
+    }
+
+    th {
+      background-color: #FFFDD0;
+      color: #5C4033;
+    }
+
+    tr:nth-child(even) {
+      background-color: #E8F5E9;
+    }
+
+    tr:hover {
+      background-color: #fce4ec;
+    }
+
+    .form-section {
+      margin-top: 40px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #F4C2C2;
+      border-radius: 8px;
+      background-color: #fff;
+      font-family: 'Georgia', serif;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      background-color: #8B7E66;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-family: 'Georgia', serif;
+    }
+
+    button:hover {
+      background-color: #5C4033;
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #B4E197;
+      color: #4B3832;
+      padding: 12px 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #FFB6B9;
+      color: white;
+    }
+
+    footer {
+      background-color: #FFB6B9cc;
+      text-align: center;
+      padding: 15px;
+      color: #5C4033;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline class="bg-video">
+  <source src="vid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+  <div class="header">
+    <h1>Contact Me</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html" target="_blank">HOME</a>
+    <a href="aboutme.html" target="_blank">ABOUT ME</a>
+    <a href="edu.html" target="_blank">EDUCATION</a>
+    <a href="interest.html" target="_blank">PERSONAL INTEREST</a>
+    <a href="gallery.html" target="_blank">GALLERY</a>
+    <a href="melaka.html" target="_blank">HOMETOWN</a>
+  </div>
+
+  <div class="container">
+    <h2>📇 My Contact Info</h2>
+    <table>
+      <tr><th>Type</th><th>Details</th></tr>
+      <tr><td>Email</td><td>2023803236@student.uitm.edu.my</td></tr>
+      <tr><td>Phone</td><td>+60 123-456 789</td></tr>
+      <tr><td>Location</td><td>Universiti Teknologi MARA Cawangan Kedah Kampus Sungai Petani, 08400 Merbok, Kedah Darul Aman</td></tr>
+    </table>
+
+    <div class="form-section">
+      <h2>📬 Send Me a Message</h2>
+      <form onsubmit="return showAlert()" action="mailto:2023803236@student.uitm.edu.my" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <a href="melaka.html" target="_blank">⟵ Previous</a>
+    <a href="index.html" target="_blank">Next ⟶</a>
+  </div>
+
+  <footer class="footer">
+    <footer>&copy; 2025 Syahirah's Personal Website |</footer>
+
+  <script>
+    function showAlert() {
+      alert("Thank you for your message!");
+      return true;
+    }
+  </script>
+
+</body>
+</html>

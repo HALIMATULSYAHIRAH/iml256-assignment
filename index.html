@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Syahirah's Personal Website</title>
+<link rel="stylesheet" href="footer.css">
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #FDF6F0;    
+   }
+
+    marquee {
+      background-color: #FFB6B9; 
+      padding: 20px 0;
+      border-bottom: 3px solid #B4E197; 
+      color: white;
+      text-shadow: 2px 2px #A05252;
+    }
+
+    .topnav {
+      background-color: #B4E197; 
+      overflow: hidden;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .topnav a {
+      display: inline-block;
+      color: #3F3F3F;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #FFB6B9; 
+      color: white;
+      border-radius: 10px;
+    }
+
+    .container {
+      position: relative;
+      width: 300px;
+      margin-top: 20px;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .container:hover .middle {
+      opacity: 1;
+    }
+
+    .text a {
+      background-color: #FF6F91; 
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .text a:hover {
+      background-color: #B4E197; 
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="aboutme.html" target="_blank">ABOUT ME</a> 
+    <a href="edu.html" target="_blank">EDUCATION</a> 
+    <a href="interest.html" target="_blank">PERSONAL INTEREST</a>  
+    <a href="melaka.html" target="_blank">HOMETOWN</a>
+    <a href="gallery.html" target="_blank">GALLERY</a>
+    <a href="contact.html" target="_blank">CONTACT LIST</a>
+  </div>
+
+  <marquee style="font-family: Elephant; font-size:60px; margin-bottom:40px;">
+    Welcome to My Personal Website
+  </marquee>
+
+  <center>
+    <p>
+      Hi! I'm Syahirah, a diploma student in Library Management.<br>
+      Explore my website to learn more about my background, dreams, and hobbies!<br>
+Click at this picture to know me better
+    </p>
+
+    <div class="container">
+      <img src="mypic.jpg" class="image" alt="Profile Picture">
+      <div class="middle">
+        <div class="text">
+          <a href="aboutme.html">ABOUT ME</a>
+        </div>
+      </div>
+    </div>
+
+  </center>
+
+  <footer class="footer">
+    <footer>&copy; 2025 Syahirah's Personal Website |</footer>
+
+</body>
+</html>
+
+

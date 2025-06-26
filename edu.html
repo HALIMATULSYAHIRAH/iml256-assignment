@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EDUCATION</title>
+<link rel="stylesheet" href="footer.css">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #FDF6F0;
+      color: #333;
+    }
+
+    .header {
+      background-image: url("grad.png");
+      background-color: #FFB6B9;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-family: 'Elephant', serif;
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #e290a2;
+    }
+
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: zoomIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .topnav {
+      background-color: #B4E197;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .topnav a {
+      display: inline-block;
+      color: #3F3F3F;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .topnav a:hover {
+      background-color: #FFB6B9;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h2 {
+      color: #4B3832;
+      margin-top: 40px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 2px solid #FF6F91;
+      padding: 12px;
+      text-align: center;
+    }
+
+    tr {
+      animation: slideFadeIn 1s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    @keyframes slideFadeIn {
+      to {
+      opacity: 1;
+     transform: translateY(0);
+      }
+    }
+
+   th {
+      background-color: #FFB6B9;
+      color: white;
+    }
+
+   tr:nth-child(even) {
+      background-color: #E8F5E9;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #FFF0F3;
+    }
+
+    tr:hover {
+     background-color: #fce4ec;
+     transition: 0.3s ease;
+    }
+
+    img.table-img {
+      width: 80px;
+      border-radius: 10px;
+    }
+
+    i {
+      display: block;
+      margin-top: 20px;
+      font-style: italic;
+      color: #7B3F00;
+    }
+
+    a {
+      color: #FF6F91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #B4E197;
+      text-decoration: underline;
+    }
+
+    .button-group {
+      margin: 40px 0 20px;
+    }
+
+    .button-group a {
+      background-color: #FF6F91;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: bold;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+
+    .button-group a:hover {
+      background-color: #B4E197;
+      color: #333;
+    }
+
+    footer {
+      background-color: #FFB6B9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    footer span {
+      font-weight: bold;
+      color: #4B3832;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <br><br><br><br><br><br><img src="education.PNG">
+  </div>
+
+  <div class="topnav">
+    <a href="index.html" target="_blank">HOME</a>
+    <a href="aboutme.html" target="_blank">ABOUT ME</a>
+    <a href="interest.html" target="_blank">PERSONAL INTEREST</a>
+    <a href="melaka.html" target="_blank">HOMETOWN</a>
+    <a href="gallery.html" target="_blank">GALLERY</a>
+    <a href="contact.html" target="_blank">CONTACT</a>
+  </div>
+
+  <div class="content">
+    <h2>🎓 Appreciation Message</h2>
+    <p>I am deeply grateful to all the educational institutions that have shaped my academic and personal journey.Starting from <b>SK Sempang</b>, where I took my first steps in learning, to<b>SMKA Tun Perak</b>, which strengthened my values,and now <b>UiTM Kedah</b>, where I continue to grow in the field of Information Management.</p>
+
+    <h2>Educational Journey</h2>
+
+    <table>
+      <tr>
+        <th rowspan="2">Level</th>
+        <th colspan="2">Institution Details</th>
+        <th rowspan="2">Year</th>
+        <th rowspan="2">Achievement</th>
+      </tr>
+      <tr>
+        <th>Institution Name</th>
+        <th>Logo</th>
+      </tr>
+      <tr>
+        <td>Primary School</td>
+        <td>SK Sempang, Merlimau Melaka</td>
+        <td><img src="sk.png" class="table-img"></td>
+        <td>2012–2017</td>
+        <td>UPSR: 4A 2B</td>
+      </tr>
+      <tr>
+        <td>Secondary School</td>
+        <td><a href="https://www.tunperak.edu.my/" target="_blank">SMKA Tun Perak, Jasin Melaka</a></td>
+        <td><img src="tunperak.png" class="table-img"></td>
+        <td>2018–2022</td>
+        <td>PT3 & SPM: 5A 2B</td>
+      </tr>
+      <tr>
+        <td>University</td>
+        <td><a href="https://kedah.uitm.edu.my/" target="_blank">UiTM Merbok, Kedah</a></td>
+        <td><img src="uitm.png" class="table-img"></td>
+        <td>2023–2026</td>
+        <td>Dean's List: SEM 1 & SEM 3</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <i>"Education is the passport to the future, for tomorrow belongs to those who prepare for it today."</i>
+        </td>
+      </tr>
+    </table>
+
+    <div class="button-group">
+      <a href="aboutme.html" target="_blank">⬅ PREVIOUS</a>
+      <a href="interest.html" target="_blank">NEXT ➡</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <footer>&copy; 2025 Syahirah's Personal Website |</footer>
+
+</body>
+</html>
+

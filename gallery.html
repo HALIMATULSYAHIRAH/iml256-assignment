@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<title>My Simple Gallery</title>
+<link rel="stylesheet" href="footer.css">
+<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      background-color: #FDF6F0;
+      color: #333;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100vw;
+      min-height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: #B4E197;
+      padding: 50px 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #3F3F3F;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #FFB6B9;
+      color: white;
+      border-radius: 8px;
+    }
+
+    .main {
+      margin-left: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header {
+      background-color: #FFB6B9;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .section-nav {
+      padding: 15px;
+      text-align: center;
+      background-color: #F4C2C2;
+    }
+
+    .section-nav a {
+      display: inline-block;
+      color: #4B3832;
+      background-color: #B4E197;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      border-radius: 10px;
+      margin: 0 8px;
+      transition: 0.3s;
+    }
+
+    .section-nav a:hover {
+      background-color: #FFB6B9;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #5C4033;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    .gallery-grid div {
+      text-align: center;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 220px; 
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #B4E197;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .nav-buttons {
+      text-align: center;
+      margin: 30px 0 50px;
+    }
+
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #B4E197;
+      color: #4B3832;
+      padding: 12px 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #FFB6B9;
+      color: white;
+    }
+
+    footer {
+      background-color: #FFB6B9;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay muted loop playsinline class="bg-video">
+  <source src="vid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+  <div class="sidebar">
+    <a href="index.html" target="_blank">HOME</a>
+    <a href="aboutme.html" target="_blank">ABOUT ME</a>
+    <a href="edu.html" target="_blank">EDUCATION</a>
+    <a href="interest.html" target="_blank">PERSONAL INTEREST</a>
+    <a href="melaka.html" target="_blank">HOMETOWN</a>
+    <a href="contact.html" target="_blank">CONTACT</a>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>My Gallery</h1>
+    </div>
+
+    <div class="section-nav">
+      <a href="#outfits">Outfits</a>
+      <a href="#uitm">UiTM Moments</a>
+      <a href="#sunset">Sunsets</a>
+    </div>
+
+    <h2 id="outfits">✨ Fav Outfit Go to Class ✨</h2>
+    <div class="gallery-grid">
+      <div><img src="outfit1.jpg"><p>Pastel day</p></div>
+      <div><img src="outfit2.jpg"><p>Earth Tone</p></div>
+      <div><img src="outfit3.jpg"><p>Me in Blue</p></div>
+      <div><img src="outfit4.jpg"><p>Matcha Green Shawl</p></div>
+      <div><img src="outfit5.jpg"><p>Being Red</p></div>
+    </div>
+
+    <h2 id="uitm">🎓 Fav Moments in UiTM Kedah</h2>
+    <div class="gallery-grid">
+      <div><img src="moment1.jpg"><p>Only 100 people got free Icip-Icip</p></div>
+      <div><img src="moment2.jpg"><p>Zumba with Girl Only</p></div>
+      <div><img src="moment3.jpg"><p>Join Explorace</p></div>
+      <div><img src="moment4.jpg"><p>Supporting my friend</p></div>
+      <div><img src="moment5.jpg"><p>Food Event</p></div>
+    </div>
+
+    <h2 id="sunset">🌇 Sunset Captures</h2>
+    <div class="gallery-grid">
+      <div><img src="sunset1.jpg"><p>Quick Snap</p></div>
+      <div><img src="sunset2.jpg"><p>Brisk Walk View</p></div>
+      <div><img src="sunset3.jpg"><p>Sunset in Klang</p></div>
+      <div><img src="sunset4.jpg"><p>Highway Sunset</p></div>
+      <div><img src="sunset5.jpg"><p>Favorite place to watch sunset</p></div>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="interest.html" target="_blank">⟵ Previous</a>
+      <a href="melaka.html" target="_blank">Next ⟶</a>
+    </div>
+
+  <footer class="footer">
+    <footer>&copy; 2025 Syahirah's Personal Website |</footer>
+
+  </div>
+
+</body>
+</html>
